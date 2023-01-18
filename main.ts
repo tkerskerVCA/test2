@@ -17,6 +17,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
         `, mySprite, 0, -50)
+    pause(100)
 })
 let projectile: Sprite = null
 let mySprite: Sprite = null
@@ -38,3 +39,4 @@ mySprite = sprites.create(img`
     4 d d d 4 4 4 . . . . . . . . . 
     4 4 4 4 . . . . . . . . . . . . 
     `, SpriteKind.Player)
+mySprite.x += controller.dx()
