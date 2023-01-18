@@ -39,4 +39,4 @@ mySprite = sprites.create(img`
     4 d d d 4 4 4 . . . . . . . . . 
     4 4 4 4 . . . . . . . . . . . . 
     `, SpriteKind.Player)
-mySprite.x += controller.dx()
+controller.moveSprite(mySprite, 100, 100)
