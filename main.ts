@@ -1,4 +1,26 @@
-let mySprite = sprites.create(img`
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    projectile = sprites.createProjectileFromSprite(img`
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . 2 1 2 . . . . . . 
+        . . . . . . . 2 1 2 . . . . . . 
+        . . . . . . . 2 1 2 . . . . . . 
+        . . . . . . . 3 1 3 . . . . . . 
+        . . . . . . 2 3 1 3 2 . . . . . 
+        . . . . . . 2 1 1 1 2 . . . . . 
+        . . . . . . 2 1 1 1 3 . . . . . 
+        . . . . . . 3 1 1 1 3 . . . . . 
+        . . . . . . 3 1 1 1 3 . . . . . 
+        . . . . . . 3 1 1 1 3 . . . . . 
+        . . . . . . 2 3 1 3 2 . . . . . 
+        . . . . . . . 2 2 2 . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        `, mySprite, 0, -50)
+})
+let projectile: Sprite = null
+let mySprite: Sprite = null
+mySprite = sprites.create(img`
     . . . . . . b b b b . . . . . . 
     . . . . . . b 4 4 4 b . . . . . 
     . . . . . . b b 4 4 4 b . . . . 
